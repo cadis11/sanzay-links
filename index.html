@@ -4,125 +4,95 @@
   <meta charset="UTF-8" />
   <title>Connect with Sanjay Thapa</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Contact Sanjay Thapa: WhatsApp, Instagram, TikTok, Email, Phone." />
+  <link rel="icon" href="favicon.ico" />
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; padding: 0; margin: 0; }
     body, html {
-      margin: 0; padding: 0;
       height: 100%;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'Poppins', sans-serif;
       background: #0a0f2c;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      display: flex; align-items: center; justify-content: center;
       color: #d4af37;
-      user-select: none;
     }
     .card {
+      opacity: 0;
+      animation: fadeIn 0.8s ease-out forwards;
       background: #121630;
-      padding: 40px 45px;
+      padding: 40px;
       border-radius: 25px;
-      box-shadow: 0 10px 30px rgba(212, 175, 55, 0.25);
+      box-shadow: 0 10px 30px rgba(212,175,55,0.25);
       text-align: center;
-      max-width: 360px;
-      width: 90vw;
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
+      max-width: 360px; width: 90vw;
       border: 1px solid #d4af37;
     }
-    .card:hover {
-      box-shadow: 0 20px 40px rgba(212, 175, 55, 0.35);
+    @keyframes fadeIn {
+      to { opacity: 1; }
     }
     .profile-pic {
       width: 120px;
       height: 120px;
       border-radius: 50%;
       object-fit: cover;
-      margin-bottom: 20px;
+      margin: 0 auto 20px;
       border: 4px solid #d4af37;
-      box-shadow: 0 0 12px rgba(212, 175, 55, 0.6);
+      box-shadow: 0 0 12px rgba(212,175,55,0.6);
+      display: block;
     }
-    h1 {
-      margin: 0;
-      font-size: 32px;
-      font-weight: 700;
-      color: #f9f5e3;
-    }
-    .roles {
-      margin-bottom: 30px;
-      font-size: 16px;
-      font-weight: 500;
-      color: #e0c97e;
-      letter-spacing: 0.8px;
-      line-height: 1.4;
-    }
+    h1 { font-size: 32px; font-weight: 700; color: #f9f5e3; margin-bottom: 8px; }
+    .roles { font-size: 16px; font-weight: 600; color: #e0c97e; margin-bottom: 30px; }
     .link {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 12px auto;
-      padding: 13px 22px;
-      background: #d4af37;
-      color: #0a0f2c;
-      border-radius: 12px;
-      text-decoration: none;
-      max-width: 280px;
-      font-size: 17px;
-      font-weight: 700;
-      box-shadow: 0 5px 15px rgba(212, 175, 55, 0.5);
-      transition: background 0.3s ease, transform 0.2s ease;
+      display: flex; align-items: center; justify-content: center;
+      margin: 12px auto; padding: 13px 22px;
+      background: #d4af37; color: #0a0f2c;
+      border-radius: 12px; text-decoration: none;
+      width: 260px;
+      font-size: 17px; font-weight: 700;
+      box-shadow: 0 5px 15px rgba(212,175,55,0.5);
+      transition: background 0.3s, transform 0.2s;
     }
-    .link:hover {
-      background: #f0d877;
-      transform: translateY(-3px);
-    }
-    .link svg {
-      margin-right: 14px;
-      fill: currentColor;
-      width: 22px;
-      height: 22px;
-      flex-shrink: 0;
-    }
-    .phone-contact {
-      margin-top: 20px;
-      font-size: 16px;
-      font-weight: 600;
-      color: #f0d877;
+    .link:hover { background: #f0d877; transform: translateY(-3px); }
+    .link svg { margin-right: 14px; width: 22px; height: 22px; fill: currentColor; }
+    .contact { margin-top: 20px; font-size: 16px; font-weight: 600; color: #f0d877; }
+    .contact a { color: inherit; text-decoration: none; }
+    @media (max-width: 400px) {
+      .card { padding: 30px; }
+      h1 { font-size: 28px; }
+      .roles { font-size: 15px; }
+      .link { width: 100%; font-size: 16px; }
     }
   </style>
 </head>
 <body>
   <div class="card">
-    <img
-      class="profile-pic"
+    <img class="profile-pic"
       src="https://raw.githubusercontent.com/cadis11/sanzay-links/main/images/fe6cb3ef-3a17-44df-a846-474b0aa07c7a.jpg"
-      alt="Profile Picture"
-    />
+      alt="Sanjay Thapa" />
+
     <h1>Sanjay Thapa</h1>
     <div class="roles">Importer, Exporter, Translator, Tour Guide</div>
 
     <a href="https://wa.me/9779823783486" class="link" target="_blank" rel="noopener noreferrer">
-      <svg viewBox="0 0 24 24"><path d="M20.52 3.48a11.4 11.4 0 00-16.1 0 11.35 11.35 0 00-3.34 8.04 11.32 11.32 0 002.97 6.57L2 22l4.02-1.05a11.32 11.32 0 006.57 2.97 11.35 11.35 0 008.04-3.34 11.4 11.4 0 000-16.1zm-8.1 16.43a8.45 8.45 0 01-4.3-1.16l-.31-.18-2.53.66.68-2.46-.2-.31a8.48 8.48 0 011.36-11.03 8.48 8.48 0 0111.98 11.98 8.44 8.44 0 01-7.18 2.3zM17 14.8a1 1 0 01-1.4.4 5.23 5.23 0 01-2.77-2.78 1 1 0 01.4-1.4l1.48-.92a.51.51 0 01.54 0l1.18.83a.52.52 0 01.18.6l-.66 1.53z"/></svg>
-      WhatsApp
+      <svg viewBox="0 0 24 24"><path d="M20.52 3.48..."/></svg> WhatsApp
     </a>
 
     <a href="https://instagram.com/sanzay_cadis" class="link" target="_blank" rel="noopener noreferrer">
-      <svg viewBox="0 0 24 24"><path d="M7.75 2h8.5A5.75 5.75 0 0122 7.75v8.5A5.75 5.75 0 0116.25 22h-8.5A5.75 5.75 0 012 16.25v-8.5A5.75 5.75 0 017.75 2zm0 2A3.75 3.75 0 004 7.75v8.5A3.75 3.75 0 007.75 20h8.5A3.75 3.75 0 0020 16.25v-8.5A3.75 3.75 0 0016.25 4h-8.5zM12 7a5 5 0 110 10 5 5 0 010-10zm0 2a3 3 0 100 6 3 3 0 000-6zm4.75-2.25a1.25 1.25 0 112.5 0 1.25 1.25 0 01-2.5 0z"/></svg>
-      Instagram
+      <svg viewBox="0 0 24 24"><path d="M7.75 2h..."/></svg> Instagram
     </a>
 
     <a href="https://www.tiktok.com/@sanjay.cadis" class="link" target="_blank" rel="noopener noreferrer">
-      <svg viewBox="0 0 24 24"><path d="M12 2v5.28a3.52 3.52 0 01-2.68-1.08 3.56 3.56 0 00-3.1-1.13v8.5a5.34 5.34 0 007.58 4.87v-9.14h3.48V7h-5z"/></svg>
-      TikTok
-    </a>
-    
-    <a href="mailto:sanzaythapa11@gmail.com" class="link" target="_blank" rel="noopener noreferrer">
-      <svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 2v.01L12 13 4 6.01V6h16zM4 18v-8l8 5 8-5v8H4z"/></svg>
-      Email
+      <svg viewBox="0 0 24 24"><path d="M12 2v..."/></svg> TikTok
     </a>
 
-    <div class="phone-contact">+977 98237 83486</div>
+    <a href="mailto:sanzaythapa11@gmail.com" class="link">
+      <svg viewBox="0 0 24 24"><path d="M20 4H4..."/></svg> Email
+    </a>
+
+    <div class="contact">
+      <a href="tel:+9779823783486">+977 98237 83486</a>
+    </div>
   </div>
 </body>
 </html>
