@@ -12,72 +12,88 @@
       margin: 0; padding: 0;
       height: 100%;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(135deg, #e0f0ff, #c3dbff);
+      background: linear-gradient(135deg, #3a8dde, #1c3f73);
       display: flex;
       justify-content: center;
       align-items: center;
-      color: #222;
+      color: #fff;
+      user-select: none;
     }
     .card {
-      background: white;
-      padding: 35px 40px;
-      border-radius: 18px;
-      box-shadow: 0 10px 30px rgba(0, 115, 230, 0.3);
+      background: linear-gradient(145deg, #ffffff22, #ffffff11);
+      padding: 40px 45px;
+      border-radius: 25px;
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
       text-align: center;
       max-width: 360px;
       width: 90vw;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+    }
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 25px 45px rgba(0, 0, 0, 0.6);
     }
     .profile-pic {
-      width: 110px;
-      height: 110px;
+      width: 120px;
+      height: 120px;
       border-radius: 50%;
       object-fit: cover;
-      margin-bottom: 18px;
-      border: 4px solid #0073e6;
-      box-shadow: 0 0 10px rgba(0,115,230,0.4);
+      margin-bottom: 20px;
+      border: 5px solid #61dafb;
+      box-shadow: 0 0 15px #61dafb;
+      transition: box-shadow 0.3s ease;
     }
     h1 {
       margin: 0;
-      font-size: 30px;
+      font-size: 32px;
       font-weight: 700;
+      letter-spacing: 1.2px;
+      margin-bottom: 8px;
     }
     .roles {
-      margin: 8px 0 26px 0;
-      font-size: 15px;
+      margin-bottom: 30px;
+      font-size: 17px;
       font-weight: 600;
-      color: #555;
-      line-height: 1.4;
+      color: #a9d6ff;
+      letter-spacing: 0.8px;
+      line-height: 1.5;
     }
     .link {
       display: flex;
       align-items: center;
       justify-content: center;
       margin: 12px auto;
-      padding: 13px 22px;
-      background: #0073e6;
-      color: white;
-      border-radius: 10px;
+      padding: 14px 24px;
+      background: #61dafb;
+      color: #0d1a26;
+      border-radius: 12px;
       text-decoration: none;
-      max-width: 270px;
+      max-width: 280px;
       font-size: 18px;
-      font-weight: 600;
-      box-shadow: 0 4px 10px rgba(0, 115, 230, 0.6);
-      transition: background 0.3s ease;
+      font-weight: 700;
+      box-shadow: 0 6px 15px rgba(97, 218, 251, 0.6);
+      transition: background 0.3s ease, color 0.3s ease;
+      user-select: none;
     }
     .link:hover {
-      background: #005bb5;
+      background: #21a1f1;
+      color: #fff;
+      box-shadow: 0 8px 20px rgba(33, 161, 241, 0.8);
     }
     .link svg {
-      margin-right: 14px;
-      fill: white;
-      width: 22px;
-      height: 22px;
+      margin-right: 16px;
+      fill: currentColor;
+      width: 24px;
+      height: 24px;
+      flex-shrink: 0;
     }
     .phone-contact {
-      margin-top: 18px;
-      font-size: 16px;
-      font-weight: 600;
-      color: #0073e6;
+      margin-top: 22px;
+      font-size: 17px;
+      font-weight: 700;
+      color: #61dafb;
       user-select: all;
     }
   </style>
@@ -90,7 +106,7 @@
       alt="Profile Picture"
     />
     <h1>Cadis</h1>
-    <div class="roles">Entrepreneur, Import Export, Online Business</div>
+    <div class="roles">Importer, Exporter, Translator, Tour Guide</div>
 
     <a href="https://wa.me/919365760997" class="link" target="_blank" rel="noopener noreferrer">
       <!-- WhatsApp SVG Icon -->
@@ -108,6 +124,12 @@
       <!-- TikTok SVG Icon -->
       <svg viewBox="0 0 24 24"><path d="M12 2v5.28a3.52 3.52 0 01-2.68-1.08 3.56 3.56 0 00-3.1-1.13v8.5a5.34 5.34 0 007.58 4.87v-9.14h3.48V7h-5z"/></svg>
       TikTok
+    </a>
+    
+    <a href="mailto:sanzaythapa11@gmail.com" class="link" target="_blank" rel="noopener noreferrer">
+      <!-- Email SVG Icon -->
+      <svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 2v.01L12 13 4 6.01V6h16zM4 18v-8l8 5 8-5v8H4z"/></svg>
+      Email
     </a>
 
     <div class="phone-contact">+91 93657 60997</div>
