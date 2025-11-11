@@ -22,15 +22,17 @@
       "priceCurrency": "NPR",
       "availability": "https://schema.org/LimitedAvailability",
       "itemCondition": "https://schema.org/NewCondition",
-      "url": "http://rudrakshapasal.com"
+      "url": "http://rudrakshapasal.com/7-mukhi-activated.html"
     }
   }
   </script>
   <style>
     :root {
       --amber: #f59e0b;
+      --amber-dark: #d97706;
       --black: #000;
       --white: #fff;
+      --gray: #1a1a1a;
     }
     * { margin:0; padding:0; box-sizing:border-box; }
     body { 
@@ -94,13 +96,14 @@
       .process { grid-template-columns: repeat(3, 1fr); }
     }
   </style>
+<meta http-equiv='Cache-Control' content='no-cache, no-store, must-revalidate'>
 </head>
 <body>
 
 <header>
   <nav class="container">
     <a href="/" class="logo">Rudraksha-Pasal</a>
-    <div class="badge">Only 5 Left</div>
+    <div class="badge">Only 5 Left in Stock</div>
   </nav>
 </header>
 
@@ -158,44 +161,7 @@
   <p>© 2025 Rudraksha-Pasal • Hand-activated with devotion in Pokhara, Nepal</p>
 </footer>
 
-  <script>
-    // Live Stock Counter (starts at 5)
-    let stock = parseInt(localStorage.getItem('rudrakshaStock') || '5');
-    const stockBadge = document.querySelector('.badge');
-    const stockText = document.querySelector('.stock');
-    const cta = document.querySelector('.cta');
-    const priceDiv = document.querySelector('.price');
-
-    function updateStock() {
-      if (stock <= 0) {
-        stock = 0;
-        cta.innerHTML = 'Sold Out! <br><small>Contact for Waitlist</small>';
-        cta.href = '#';
-        cta.style.background = '#6b7280';
-        priceDiv.innerHTML = 'NPR 8,000 <span class="old-price">NPR 14,000</span> <br><small>(Sold Out)</small>';
-      } else {
-        stockBadge.innerHTML = `Only ${stock} Left`;
-        stockText.innerHTML = `Only ${stock} Beads Remaining`;
-        cta.innerHTML = `Buy Now via WhatsApp (${stock} left)`;
-      }
-      localStorage.setItem('rudrakshaStock', stock.toString());
-    }
-
-    // Update on load
-    updateStock();
-
-    // Decrease on buy click (simulate sale)
-    cta.addEventListener('click', function(e) {
-      if (stock > 0) {
-        stock--;
-        updateStock();
-        // Optional: Send WhatsApp with stock info
-        const url = this.href.replace(/%20\(\d+\sleft\)/, `%20(${stock + 1} left)`); // Keep original message
-      }
-    });
-  </script>
-<!-- LIVE DEPLOY: 2025-11-11 21:49:36 -->
+<!-- LIVE STATIC: 7-MUKHI | 2025-11-11 22:27:34 -->
 </body>
 </html>
-
 
